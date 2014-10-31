@@ -1,0 +1,201 @@
+<gallery
+base = ""
+background = "#FFFFFF"
+banner = "#F0F0F0"
+text = "#000000"
+link = "#0000FF"
+alink = "#FF0000"
+vlink = "#800080"
+date = "8/27/2008">
+	<sitename>BEIJING OLYMPICS 2008</sitename>
+	<photographer></photographer>
+	<contactinfo>AMAN &amp; GUNJEET</contactinfo>
+	<email></email>
+	<security><![CDATA[]]> </security>
+
+<banner font = "Arial" fontsize = "3" color =  "#F0F0F0"> </banner>
+<thumbnail base ="thumbnails/" font = "Arial" fontsize = "4" color = "#F0F0F0" border = "0" rows = "3" col = "5"> </thumbnail> 
+<large base ="images/" font = "Arial" fontsize = "3" color = "#F0F0F0" border = "0"> </large>
+<images id = "images">
+
+<image
+path = "Img214550852.jpg"
+width = "350"
+height = "262"
+thumbpath = "Img214550852.jpg"
+thumbwidth = "75"
+thumbheight = "56">
+</image>
+
+
+<image
+path = "Img214550853.jpg"
+width = "350"
+height = "262"
+thumbpath = "Img214550853.jpg"
+thumbwidth = "75"
+thumbheight = "56">
+</image>
+
+
+<image
+path = "Img214550854.jpg"
+width = "350"
+height = "262"
+thumbpath = "Img214550854.jpg"
+thumbwidth = "75"
+thumbheight = "56">
+</image>
+
+
+<image
+path = "Img214567496.jpg"
+width = "350"
+height = "261"
+thumbpath = "Img214567496.jpg"
+thumbwidth = "75"
+thumbheight = "55">
+</image>
+
+
+<image
+path = "Img214567497.jpg"
+width = "350"
+height = "233"
+thumbpath = "Img214567497.jpg"
+thumbwidth = "75"
+thumbheight = "49">
+</image>
+
+
+<image
+path = "Img214567498.jpg"
+width = "350"
+height = "233"
+thumbpath = "Img214567498.jpg"
+thumbwidth = "75"
+thumbheight = "49">
+</image>
+
+
+<image
+path = "Img214567499.jpg"
+width = "350"
+height = "233"
+thumbpath = "Img214567499.jpg"
+thumbwidth = "75"
+thumbheight = "49">
+</image>
+
+
+<image
+path = "Img214569315.jpg"
+width = "350"
+height = "233"
+thumbpath = "Img214569315.jpg"
+thumbwidth = "75"
+thumbheight = "50">
+</image>
+
+
+<image
+path = "Img214569316.jpg"
+width = "350"
+height = "233"
+thumbpath = "Img214569316.jpg"
+thumbwidth = "75"
+thumbheight = "50">
+</image>
+
+
+<image
+path = "Img214569319.jpg"
+width = "350"
+height = "262"
+thumbpath = "Img214569319.jpg"
+thumbwidth = "75"
+thumbheight = "56">
+</image>
+
+
+<image
+path = "Img214582190.jpg"
+width = "350"
+height = "217"
+thumbpath = "Img214582190.jpg"
+thumbwidth = "75"
+thumbheight = "46">
+</image>
+
+
+<image
+path = "Img214582191.jpg"
+width = "350"
+height = "237"
+thumbpath = "Img214582191.jpg"
+thumbwidth = "75"
+thumbheight = "50">
+</image>
+
+
+<image
+path = "Img214582192.jpg"
+width = "350"
+height = "205"
+thumbpath = "Img214582192.jpg"
+thumbwidth = "75"
+thumbheight = "44">
+</image>
+
+
+<image
+path = "Img214582206.jpg"
+width = "350"
+height = "233"
+thumbpath = "Img214582206.jpg"
+thumbwidth = "75"
+thumbheight = "49">
+</image>
+
+
+<image
+path = "Img214582217.jpg"
+width = "350"
+height = "245"
+thumbpath = "Img214582217.jpg"
+thumbwidth = "75"
+thumbheight = "52">
+</image>
+
+
+<image
+path = "Img214584558.jpg"
+width = "350"
+height = "227"
+thumbpath = "Img214584558.jpg"
+thumbwidth = "75"
+thumbheight = "48">
+</image>
+
+
+<image
+path = "Img214584591.jpg"
+width = "350"
+height = "245"
+thumbpath = "Img214584591.jpg"
+thumbwidth = "75"
+thumbheight = "52">
+</image>
+
+
+<image
+path = "Img214584615.jpg"
+width = "350"
+height = "232"
+thumbpath = "Img214584615.jpg"
+thumbwidth = "75"
+thumbheight = "49">
+</image>
+
+</images>
+</gallery>

@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+.sider{
+	width:20%;
+	float:left;
+	text-align:center;
+	padding-top:24px;
+	/*border:thin solid white;*/
+}
+.sider ul{
+	float:left;
+	/*border:thin solid white;
+	background-color:violet;*/
+}
+.sider li{
+	display:block;
+	text-align:center;
+	background-color:#1a1a1a;
+	border:thin solid #0072a8;
+	border-radius:2px;
+	padding:4px 3px 4px 3px;
+	box-shadow:#0072a8 3px 3px 4px;
+}
+.sider a{
+	text-decoration:none;
+	font-size:19px;
+	color:#ededf0;
+	font-family:"Courier New", Courier, monospace;
+	font-weight:400;
+}
+.sider a:hover{
+	color:white;
+}

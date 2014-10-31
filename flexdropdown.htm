@@ -1,0 +1,562 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Dynamic Drive DHTML Scripts- Flex Level Drop Down&nbsp; Menu</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="A folding DHTML menu tree with persistance feature, created via cookies." />
+<meta name="keywords" content="DHTML, folding menu tree script, DHTML tutorial, free, JavaScript,persistance" />
+<link rel="stylesheet" type="text/css" href="../ddincludes/mainstyle.css" />
+
+<link rel="stylesheet" type="text/css" href="flexdropdown.css" />
+
+<style>
+a[data-flexmenu="flexmenu1"].selected{
+background: yellow;
+}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="flexdropdown.js">
+
+/***********************************************
+* Flex Level Drop Down Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+
+</script>
+
+</head>
+
+<body>
+
+<script src="http://www.dynamicdrive.com/ddincludes/scripts.js"></script>
+
+<div id="topsection">
+
+
+<a href="http://www.dynamicdrive.com" title="Dynamic Drive DHTML and CSS code library"><img id="ddlogo" src="http://www.dynamicdrive.com/ddincludes/ddlogo.png" style="border-width:0" /></a>
+
+<div id="topsplitmenu">
+
+<a href="http://www.dynamicdrive.com/new.htm" class="sb"><span class="innerspan">New</span></a>
+<a href="http://www.dynamicdrive.com/revised.htm" class="sb"><span class="innerspan">Revised</span></a>
+<a href="http://www.dynamicdrive.com/style/" class="sb"><span class="innerspan">CSS Library</span></a><a class="downtoggler dedicatedtoggler hasdropdown" rel="dropmenucsslib[click]"><span class="innerspan downarrow"> </span></a>
+<a href="http://www.dynamicdrive.com/forums/" class="sb"><span class="innerspan">Forums</span></a>
+<a href="http://tools.dynamicdrive.com" class="sb"><span class="innerspan">Web Tools</span></a><a class="downtoggler dedicatedtoggler hasdropdown" rel="dropmenutools[click]"><span class="innerspan downarrow"> </span></a>
+
+</div>
+
+
+<div id="toprightdivbox">
+
+<form id="topform" method="get" action="http://www.dynamicdrive.com/search/search.php">
+<input type="text" name="zoom_query" id="zoom_query" size="20" class="zoom_searchbox topsearchbox" placeholder="search" />
+<input id="query_submit" type="image" src="http://www.dynamicdrive.com/ddincludes/magnify.gif" />
+
+<input name="zoom_per_page" id="zoom_per_page" type="hidden" value="10" />
+<input name="zoom_and" id="zoom_and" type="hidden" value="1" />
+<input type="hidden" name="zoom_sort" value="0" />
+</form>
+
+<div><a href="http://www.dynamicdrive.com/faqs.htm">FAQs</a> <a href="http://www.dynamicdrive.com/award/">Awards</a> <a href="http://www.dynamicdrive.com/notice.htm">Usage Terms</a> <a href="http://www.dynamicdrive.com/contact.htm">Contact</a> </div>
+
+</div>
+
+<div style="margin:auto; clear:both"><script type="text/javascript" src="http://www.dynamicdrive.com/ddincludes/adbanner.js"></script></div>
+
+
+</div>
+
+
+<!-- Drop Down #1 -->
+
+<ul id="dropmenucsslib" class="dd_splitdropdown">
+<li><a href="http://www.dynamicdrive.com/style/csslibrary/all/" class="title">CSS Codes</a></li>
+<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C1/">Horizontal CSS Menus</a></li>
+<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C2/">Vertical CSS Menus</a></li>
+<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C4/">Image CSS</a></li>
+<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C6/">Form CSS</a></li>
+<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C5/">DIVs and containers</a></li>
+<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C7/">Links &amp; Buttons</a></li>
+<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C17/">CSS3 demos</a></li>
+<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C8/">Other</a></li>
+<li><a href="http://www.dynamicdrive.com/style/layouts/" class="title">CSS Layouts</a></li>
+<li><a href="http://www.dynamicdrive.com/style/layouts/category/C9/">Two Columns</a></li>
+<li><a href="http://www.dynamicdrive.com/style/layouts/category/C10/">Three Columns</a></li>
+<li><a href="http://www.dynamicdrive.com/style/layouts/category/C12/">Fixed layouts</a></li>
+<li><a href="http://www.dynamicdrive.com/style/layouts/category/C13/">Liquid Layouts</a></li>
+<li><a href="http://www.dynamicdrive.com/style/layouts/category/C11/">CSS Frames</a></li>
+</ul>
+
+<!-- Drop Down #2 -->
+
+<ul id="dropmenutools" class="dd_splitdropdown">
+				<li><a href="http://tools.dynamicdrive.com/imageoptimizer/">Image Optimizer</a></li>
+				<li><a href="http://tools.dynamicdrive.com/favicon/">FavIcon Generator</a></li>
+				<li><a href="http://tools.dynamicdrive.com/animatedgif/">Animated Gif</a></li>
+				<li><a href="http://www.dynamicdrive.com/emailriddler/">Email Riddler</a></li>
+        <li><a href="http://tools.dynamicdrive.com/password/">.htaccess Password</a></li>
+				<li><a href="http://tools.dynamicdrive.com/userban/">.htaccess Banning</a></li>
+        <li><a href="http://tools.dynamicdrive.com/gradient/">Gradient Image</a></li>
+        <li><a href="http://tools.dynamicdrive.com/button/">Button Maker</a></li>
+				<li><a href="http://tools.dynamicdrive.com/ribbon/">Ribbon Rules</a></li>
+				<li><a href="http://tools.dynamicdrive.com/listscrubber/">List Scrubber Tool</a></li>
+				<li><a href="http://www.ddwhois.com/">DD Whois Service</a></li>
+</ul>
+
+<script>
+ddsplitmenu.init("hasdropdown")
+</script>
+
+<p id="pathlinks"><a href="http://www.dynamicdrive.com/">Home</a> <img border="0" src="../ddincludes/arrow2.gif" width="8" height="10" />                                                        
+<a href="http://www.dynamicdrive.com/dynamicindex1/">Menu and Navigation</a> <img border="0" src="../ddincludes/arrow2.gif" width="8" height="10" />                                                        
+<a href="http://www.dynamicdrive.com/dynamicindex1/indexc.html">Multiple Level 
+Menus</a> 
+<img border="0" src="../ddincludes/arrow2.gif" width="8" height="10" />                                                        Here</p>
+
+<table id="maintable" border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td id="leftbar" valign="top">
+			<div class="headers">Categories</div>
+			<ul class="categorylinks">
+				<li id="c7"><a href="http://www.dynamicdrive.com/dynamicindex7/" >Calendars</a></li>
+				<li id="c6"><a href="http://www.dynamicdrive.com/dynamicindex6/">Date &amp; Time</a></li>
+				<li id="c3"><a href="http://www.dynamicdrive.com/dynamicindex3/">Document Effects</a></li>
+				<li id="c17"><a href="http://www.dynamicdrive.com/dynamicindex17/">Dynamic Content</a></li>
+				<li id="c16"><a href="http://www.dynamicdrive.com/dynamicindex16/">Form Effects</a></li>
+				<li id="c12"><a href="http://www.dynamicdrive.com/dynamicindex12/">Games</a></li>
+				<li id="c4"><a href="http://www.dynamicdrive.com/dynamicindex4/">Image Effects</a></li>		
+				<li id="c5"><a href="http://www.dynamicdrive.com/dynamicindex5/">Links &amp; Tooltips</a></li>			
+				<li id="c1"><a href="http://www.dynamicdrive.com/dynamicindex1/">Menus &amp; Navigation</a></li>
+				<li id="c13"><a href="http://www.dynamicdrive.com/dynamicindex13/">Mouse and Cursor</a></li>			
+				<li id="c2"><a href="http://www.dynamicdrive.com/dynamicindex2/">Scrollers</a></li>
+				<li id="c10"><a href="http://www.dynamicdrive.com/dynamicindex10/">Text Animations</a></li>
+				<li id="c9"><a href="http://www.dynamicdrive.com/dynamicindex9/">User/System Preference</a></li>
+				<li id="c8"><a href="http://www.dynamicdrive.com/dynamicindex8/">Window and Frames</a></li>
+				<li id="c11"><a href="http://www.dynamicdrive.com/dynamicindex11/">Other</a></li>
+				<li id="c18"><a href="http://www.dynamicdrive.com/dynamicindex18/">XML and RSS</a></li>
+			</ul>
+
+
+
+
+			<div class="headers" style="clear:both">Other Sections</div>
+			<ul class="categorylinks diffpointer">
+				<li><a href="http://www.dynamicdrive.com/forums/">Script Forums</a></li>
+				<li><a href="http://www.dynamicdrive.com/recommendit/">Recommend Us</a></li>
+				<li><a href="http://www.dynamicdrive.com/notice.htm">Usage Terms</a></li>
+				<li><a href="http://www.javascriptkit.com">Free JavaScripts</a></li>		
+			</ul>
+
+<div class="headers" style="margin: 8px 0;">Sweet Ads</div>
+
+<div style="text-align:center">
+
+<script type="text/javascript">
+Vertical1437 = false;
+ShowAdHereBanner1437 = false;
+RepeatAll1437 = false;
+NoFollowAll1437 = false;
+BannerStyles1437 = new Array(
+	"a{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0 4px 10px 0;text-align:center;text-decoration:none;overflow:hidden;background:url(http://www.dynamicdrive.com/ddincludes/bottomshadow.png) bottom center no-repeat; padding-bottom: 12px;}",
+	"img{border:0;clear:right;}",
+	"a.adhere{color:#666;font-weight:bold;font-size:12px;border:1px solid navy;background:#e7e7e7;text-align:center;}",
+	"a.adhere:hover{border:1px solid navy;background:#ddd;color:#333;}"
+);
+
+document.write(unescape("%3Cscript src='"+document.location.protocol+"//s3.buysellads.com/1437/1437.js?v="+Date.parse(new Date())+"' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+</div>
+		
+    <div class="headers">Compatibility</div>
+<ul class="menuitems">
+<li style="border-bottom: 1px solid #ececec;"><b>IE5+:</b> IE 5 and above</li>
+<li style="border-bottom: 1px solid #ececec;"><b>FF1+:</b> Firefox 1.0+. NS6+ and FF beta are 
+  assumed as well.</li>
+<li style="border-bottom: 1px solid #ececec;"><b>Opr7+:</b> Opera 7 and above.</li>
+
+</ul>
+
+<div>
+
+Bookmark <b style="color:navy"><script type="text/javascript">document.write(ddscripttitle)</script></b> online:<br />
+<ul style="margin-top: 5px; font-size: 90%; margin-left: 0; padding-left: 18px"><li><a href="http://www.dynamicdrive.com/bookmark.php?site=deli" onClick="return jsenabledmark('deli')" rel="nofollow">Bookmark</a> to del.icio.us</li>
+<li><a href="http://www.dynamicdrive.com/bookmark.php?site=furl" onClick="return jsenabledmark('furl')" rel="nofollow">Bookmark</a> to Furl.net</li>
+</ul>
+
+</div>
+
+
+<p align="center">
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">addthis_pub  = 'georgeuser';</script>
+<a href="http://www.addthis.com/bookmark.php" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()"><img src="http://s9.addthis.com/button2-bm.png" width="160" height="24" border="0" alt="" /></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+<!-- AddThis Button END -->
+</p>
+
+<p style="margin:20px auto;text-align:center"><g:plusone size="tall"></g:plusone></p>
+
+    </td>
+    <td id="spacertd">
+<img src="../spacer.gif" id="spacergif">
+    </td>
+    <td valign="top" id="contentarea">
+    
+<script type="text/javascript">
+if (showincontentheader)
+document.write('<div id="topbanner" align="left">'+revised_ranban[ran_num]+'</div>')
+</script>
+
+
+<div id="scriptheader"><span class="compatlist">FF1+ IE7+ Opera8+</span> 
+  <h3>Flex Level Drop Down Menu (v1.3)</h3></div> 
+<div id="scriptheaderFoot"> <b><!--webbot bot="HTMLMarkup" startspan --><form class="navselectform">
+<select name="example" size="1" onChange="pagenavselect_dd(this)">
+<option value="flexdropdown.htm" selected="selected">Script Index Page</option>
+<option value="flexdropdown_suppliment.htm">Dynamically applying flex menu to a link, defining your flex menu contents</option>
+</select>
+</form>
+<!--webbot bot="HTMLMarkup" endspan i-checksum="59963" -->Author:</b>  
+  <span id="ddauthor">Dynamic Drive</span></div>
+
+    <p align="left"><b>Version 1.3 (Nov 28th, 2011)</b>: Script now dynamically 
+	adds a class of &quot;<code>selected</code>&quot; to the anchor link while its drop 
+	down menu is expanded, for <a href="#selectedstyle">easy styling</a> of the 
+	anchor link during its &quot;open&quot; state.</p>
+<p align="left"><strong>Description: </strong>More robust than a regular 
+	menu bar, this flexible menu script lets you add a multi level drop down menu to any link on the page. 
+	A close relative of <a href="popupmenu.htm">Flex Level Pop Up Menu</a>, each 
+	menu can either drop down or to the right of the anchor element (useful when 
+	the link is a side bar link). The menus intelligently reposition themselves 
+	when too close to the browser edges. Structure wise each drop down menu is simply defined as a regular nested UL on the page, making it very 
+	intuitive to set up, not to mention search engine friendly. Lets 
+	run down the script's features:</p>
+<ul>
+	<li>
+	Lets you associate a multi level drop down menu to any link on the page, by inserting the custom attribute <code>
+	&quot;data-flexmenu&quot;</code> 
+	inside the link.</li>
+	<li>
+	Control whether the menu drops down or to the right of the anchor link, 
+	through the use of the custom attribute <code>&quot;data-dir&quot;</code>.</li>
+	<li>
+	Ability to fine tune the position of the drop down menu relative to the 
+	.anchor link, by specifying a custom x and y offset using the attribute <code>
+	&quot;data-offsets&quot;</code>.</li>
+	<li>
+	Each drop down menu is simply defined as a regular, hidden 
+	nested UL on the page. Also supports <a href="flexdropdown_suppliment.htm">
+	dynamic definition using JavaScript</a>. <font color="#FF0000">v1.1 feature</font></li>
+	<li>Main and sub menus repositions themselves when too close to the right or bottom edges of 
+the browser window so they remain in view.</li>
+	<li>Ability to customize the expand animation speed.</li>
+	<li>Ability to specify the delay before each menu and its sub 
+	menus appear/ disappear when the mouse rolls over and out of them.</li>
+</ul>
+<p><!--webbot bot="HTMLMarkup" startspan --><h4>Drop Down Menu:</h4>
+<p style="text-align:left"><a href="http://www.dynamicdrive.com" data-flexmenu="flexmenu1">Dynamic Drive</a></p>
+
+<h4>Drop to the right, with custom offset of 8px horizontally, 0px vertically, added:</h4>
+<p style="text-align:left"><a href="http://www.dynamicdrive.com" data-flexmenu="flexmenu2" data-dir="h" data-offsets="8,0">Webmaster Resources</a></p>
+
+
+<!--HTML for Flex Drop Down Menu 1-->
+<ul id="flexmenu1" class="flexdropdownmenu">
+<li><a href="#">Item 1a</a></li>
+<li><a href="#">Item 2a</a></li>
+<li><a href="#">Item Folder 3a</a>
+	<ul>
+	<li><a href="#">Sub Item 3.1a</a></li>
+	<li><a href="#">Sub Item 3.2a</a></li>
+	<li><a href="#">Sub Item 3.3a</a></li>
+	<li><a href="#">Sub Item 3.4a</a></li>
+	</ul>
+</li>
+<li><a href="#">Item 4a</a></li>
+<li><a href="#">Item Folder 5a</a>
+	<ul>
+	<li><a href="#">Sub Item 5.1a</a></li>
+	<li><a href="#">Item Folder 5.2a</a>
+		<ul>
+		<li><a href="#">Sub Item 5.2.1a</a></li>
+		<li><a href="#">Sub Item 5.2.2a</a></li>
+		<li><a href="#">Sub Item 5.2.3a</a></li>
+		<li><a href="#">Sub Item 5.2.4a</a></li>
+		</ul>
+	</li>
+	</ul>
+</li>
+<li><a href="#">Item 6a</a></li>
+</ul>
+
+
+<!--HTML for Flex Drop Down Menu 2-->
+<ul id="flexmenu2" class="flexdropdownmenu">
+<li><a href="http://www.dynamicdrive.com/">Dynamic Drive</a></li>
+<li><a href="http://www.cssdrive.com">CSS Drive</a></li>
+<li><a href="http://www.javascriptkit.com">JavaScript Kit</a></li>
+<li><a href="http://www.codingforums.com">Coding Forums</a></li>
+<li><a href="http://www.javascriptkit.com/domref/">DOM Reference</a></li>
+</ul><!--webbot bot="HTMLMarkup" endspan i-checksum="4204" --></p>
+    <hr size="1">
+    <p align="left"><strong>Directions </strong>
+	<a target="win2" href="flexdropdown_dev.htm"><img src="../dview.gif" width="115" height="19"
+    alt="Developer's View" border="0"></a></p>
+      <p align="left"><b>Step 1:</b> This script uses three external files, 
+		including an image. 
+      Download them below (right click, and select &quot;Save As&quot;):</p>
+<ul>
+  <li>
+  <a href="flexdropdown.js">flexdropdown.js</a></li>
+  <li>
+  <a href="flexdropdown.css">flexdropdown.css</a></li>
+	<li>
+  Single image: <img border="0" src="arrow.gif" width="7" height="9"></li>
+</ul>
+    <p align="left"><strong>Step 2: </strong>Insert the following
+    code into the &lt;head&gt; section of your page:</p>
+    <form><div
+      align="left">
+<a class="selectall" href="javascript:highlight(1)">Select All</a><br>
+      <textarea class="codecontainer" rows="8" name="S2" cols="45" wrap="virtual"><link rel="stylesheet" type="text/css" href="flexdropdown.css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="flexdropdown.js">
+
+/***********************************************
+* Flex Level Drop Down Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+
+</script></textarea></div>
+    </form>
+    <p align="left"><strong>Step 3: </strong>&nbsp;Add the below menu code to the 
+	BODY section of your page, which contains two arbitrary anchor links and 
+	their corresponding drop down menus:</p>
+    <form><p>
+<a class="selectall" href="javascript:highlight(2)">Select All</a><br>
+      <textarea class="codecontainer" rows="8" name="S3" cols="45" wrap="virtual"><h3>Drop Down Menu:</h3>
+<p style="text-align:left"><a href="http://www.dynamicdrive.com" data-flexmenu="flexmenu1">Dynamic Drive</a></p>
+
+<h3>Drop to the right, with custom offset of 8px horizontally, 0px vertically, added:</h3>
+<p style="text-align:left"><a href="http://www.dynamicdrive.com" data-flexmenu="flexmenu2" data-dir="h" data-offsets="8,0">Webmaster Resources</a></p>
+
+
+<!--HTML for Flex Drop Down Menu 1-->
+<ul id="flexmenu1" class="flexdropdownmenu">
+<li><a href="#">Item 1a</a></li>
+<li><a href="#">Item 2a</a></li>
+<li><a href="#">Item Folder 3a</a>
+	<ul>
+	<li><a href="#">Sub Item 3.1a</a></li>
+	<li><a href="#">Sub Item 3.2a</a></li>
+	<li><a href="#">Sub Item 3.3a</a></li>
+	<li><a href="#">Sub Item 3.4a</a></li>
+	</ul>
+</li>
+<li><a href="#">Item 4a</a></li>
+<li><a href="#">Item Folder 5a</a>
+	<ul>
+	<li><a href="#">Sub Item 5.1a</a></li>
+	<li><a href="#">Item Folder 5.2a</a>
+		<ul>
+		<li><a href="#">Sub Item 5.2.1a</a></li>
+		<li><a href="#">Sub Item 5.2.2a</a></li>
+		<li><a href="#">Sub Item 5.2.3a</a></li>
+		<li><a href="#">Sub Item 5.2.4a</a></li>
+		</ul>
+	</li>
+	</ul>
+</li>
+<li><a href="#">Item 6a</a></li>
+</ul>
+
+
+<!--HTML for Flex Drop Down Menu 2-->
+<ul id="flexmenu2" class="flexdropdownmenu">
+<li><a href="http://www.dynamicdrive.com/">Dynamic Drive</a></li>
+<li><a href="http://www.cssdrive.com">CSS Drive</a></li>
+<li><a href="http://www.javascriptkit.com">JavaScript Kit</a></li>
+<li><a href="http://www.codingforums.com">Coding Forums</a></li>
+<li><a href="http://www.javascriptkit.com/domref/">DOM Reference</a></li>
+</ul></textarea></p>
+    </form>
+    <p>
+    Well, that's it for installation. Read on for more details on setting up 
+	Flex Level Drop Down 
+	menu.<h3>
+    <img border="0" src="../ddincludes/orangecircle.gif" width="20" height="19">
+	<u>Basic Setup Information</u></h3>
+<p>
+    Defining and adding a Flex Drop Down menu to a link is simple enough. Firstly, define 
+	the drop down menus themselves anywhere on the page, which should each just be a regular <code>UL</code> list, 
+	nested if you desire multiple levels. For example:<p class="codehighlight">&lt;ul 
+id=&quot;<b>flexmenu1</b>&quot; class=&quot;<font color="#FF0000">flexdropdownmenu</font>&quot;&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 1a&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 2a&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item Folder 3a&lt;/a&gt;<br>
+&lt;ul&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sub Item 3.1a&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sub Item 3.2a&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sub Item 3.3a&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sub Item 3.4a&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 4a&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item Folder 5a&lt;/a&gt;<br>
+&lt;ul&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sub Item 5.1a&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item Folder 5.2a&lt;/a&gt;<br>
+&lt;ul&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sub Item 5.2.1a&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sub Item 5.2.2a&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sub Item 5.2.3a&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sub Item 5.2.4a&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 6a&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;<p>
+    Notice how the UL menu carries a unique ID and CSS class of &quot;<code>flexdropdownmenu</code>&quot;. 
+	This is required. The ID attribute can be arbitrary but unique in value.<p>
+    With the drop down menu defined, to associate it with a link on the page, just 
+	insert the attribute &quot;<code>data-flexmenu</code>&quot; inside it pointing to the 
+	ID of the desired drop down menu:<p class="codehighlight">&lt;a href=&quot;http://www.dynamicdrive.com&quot;
+<font color="#FF0000"><b>data-flexmenu</b>=&quot;flexmenu1&quot;</font>&gt;Dynamic Drive&lt;/a&gt;<p>
+    And that's it. Moving the mouse over the link &quot;Dynamic Drive&quot; above will now 
+	show the drop down menu with ID &quot;<code>flexmenu1</code>&quot;.<p>
+    Instead of defining your flex menus as ULs literally on the page, you can 
+	also dothis dynamically using JavaScript, such as inside an external .js 
+	file. See &quot;<a href="flexdropdown_suppliment.htm">Dynamically applying flex 
+	menu to a link, defining your flex menu contents</a>&quot; for more info.<h3>
+    <img border="0" src="../ddincludes/orangecircle.gif" width="20" height="19">
+	<u>Setting drop down menu direction, custom offsets</u></h3>
+<p>
+    The default behaviour of each drop down men is to appear beneath the anchor 
+	link, with no additional x or y offset. You can modify both of these aspects 
+	with the following two custom optional attributes, which are inserted inside 
+	your anchor link just like &quot;<code>data-flexmenu</code>&quot;:<ul>
+	<li><b><code>data-dir</code></b>: Enter &quot;<b><code style="font-size:120%">h</code></b>&quot; 
+	to cause the menu to drop down horizontally, or to the right of the anchor 
+	link. This is typically useful for side bar anchor links that's located in 
+	the very left or right column on the page. Default value is &quot;<b><code style="font-size:120%">v</code></b>&quot;, 
+	which is to drop down. </li>
+	<li><code>data-offsets</code>: Enter two numbers in the format <code>[x,y]</code> to 
+	specify the x and y offset of the drop down menu relative to its normal 
+	position. Default value is <code>[0,0]</code>. For example, lets say you 
+	want to move the drop down menu 5px over to the right and 3px downwards- 
+	enter the value <code>[5,3]</code>.</li>
+	</ul>
+	<p>The following causes a drop down menu to move 2px downwards from its 
+	default position:</p>
+	<p class="codehighlight">&lt;a href=&quot;http://www.dynamicdrive.com&quot; data-flexmenu=&quot;flexmenu1&quot;<font color="#FF0000"> 
+	data-offsets=&quot;[0,3]&quot;</font>&gt;Dynamic Drive&lt;/a&gt;<h3>
+    <img border="0" src="../ddincludes/orangecircle.gif" width="20" height="19">
+	<u>Other Global Settings</u></h3>
+	<p>
+    There are also a few variables inside <a href="flexdropdown.js">flexdropdown.js</a> that you may wish to 
+	edit, which affect things such as the arrow image's full path, animation 
+	speed, plus delay before menu appears/ disappears onMouseover:<p class="codehighlight">
+arrowpath: 'arrow.gif', //full URL or path to arrow image<br>
+animspeed: 200, //reveal animation speed (in milliseconds)<br>
+showhidedelay: [150, 150], //delay before menu appears and disappears when mouse 
+rolls over it, in milliseconds<h3>
+    <img id="selectedstyle" border="0" src="../ddincludes/orangecircle.gif" width="20" height="19">
+	<u>Styling the active anchor link and anchor parent LI</u></h3>
+	<p>
+    Whenever you mouse over the anchor link to reveal its drop down menu, the 
+	script temporarily adds a CSS class of &quot;<b>selected</b>&quot; to the anchor link. 
+	This gives you a way to easily style the anchor link during its active state 
+	using CSS. Given the following anchor link for a Flex Drop Down Menu:<p class="codehighlight">
+&lt;a href=&quot;http://www.dynamicdrive.com&quot; data-flexmenu=&quot;flexmenu1&quot;&gt;Dynamic 
+Drive&lt;/a&gt;<p>
+    <img border="0" src="flexanchor.gif" width="189" height="196" align="right">To apply a yellow background to the link while its drop down menu is open, 
+	you could just do the following inside your CSS:<p class="codehighlight">
+a.selected{ <br>
+background: yellow;<br>
+}<p>
+    Or to be more specific in your targeting, the following instead:<p class="codehighlight">
+a[data-flexmenu=&quot;flexmenu1&quot;].selected{<br>
+background: yellow;<br>
+}<p>
+    <img border="0" src="flexli.gif" width="359" height="191" align="right">Inside the Drop Down Menu, the script also adds a CSS class of &quot;<b>selected</b>&quot; 
+	to the parent LI of the UL the mouse is currently over. This enables you to 
+	&quot;highlight&quot; the currently selected LI element. To customize this &quot;selected&quot; class, 
+	inside flexdropdown.css, find and edit the following part in bold:<p class="codehighlight">
+.flexdropdownmenu li a:hover, <b>.flexdropdownmenu li.selected&gt;a</b>{<br>
+background: #F0CE7D;<br>
+}<h1 class="navselectheader">Table Of Contents</h1>
+<p>This script consists of an index page plus two supplementary pages:</p>
+<ul class="navselectlist">
+	<li>Script Index Page</li>
+	<li><a href="flexdropdown_suppliment.htm">Dynamically applying flex menu to 
+	a link, defining your flex menu contents</a></li>
+	</ul>
+    <p>
+    
+<div style="border-top:1px dashed gray">
+<script type="text/javascript"><!--
+google_ad_client = "pub-3356683755662088";
+/* DD footer 728x90, created 9/6/10 */
+google_ad_slot = "0440677228";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div></td>
+  </tr>
+  <tr>
+    <td id="leftbar" valign="top">
+&nbsp;</td>
+    <td id="spacertd">
+&nbsp;</td>
+    <td valign="top" id="contentarea">
+    
+&nbsp;</td>
+  </tr>
+</table>
+
+
+<div id="footer">
+<a href="#top" onClick="dd_scrolltotop(); return false"><img src="http://www.dynamicdrive.com/ddincludes/jumptop.png" style="position:absolute;right:5px; bottom: 7px; border-width:0" title="Jump to Top" /></a>
+<div id="subfooter">
+<div id="subfooter-left"><a href="http://pipes.yahoo.com/pipes/pipe.run?_id=a5e67ec6024feb24f1f5a78ee33fe991&_render=rss"><img src="http://www.dynamicdrive.com/ddincludes/rss.png" title="New Content- RSS feed" /></a> <a href="http://twitter.com/ddrivegeorge"><img src="http://www.dynamicdrive.com/ddincludes/twitter-2.png" title="Dynamic Drive Twitter Account" /></a></div> 
+<div id="subfooter-center"><div class="drop-shadow curled">
+<div style="margin:auto; text-align:center">
+
+Copyright 2012 (c) Dynamic Drive. All rights reserved. <a href="http://www.dynamicdrive.com/notice.htm">Please see TOS</a> before using any of our scripts.
+
+</div>
+</div></div>
+<div id="subfooter-right">
+
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-55377-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+<!-- Place this tag in your head or just before your close body tag -->
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
+
+</body>
+
+</html>
